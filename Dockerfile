@@ -1,4 +1,4 @@
-FROM resin/armv7hf-debian:jessie
+FROM resin/rpi-raspbian:latest
 
 ENV QEMU_EXECVE 1
 

@@ -1,4 +1,4 @@
-FROM debian:stable as BUILDENV
+FROM library/debian:stable as BUILDENV
 
 RUN apt-get update && apt-get install -y \
 	git \ 

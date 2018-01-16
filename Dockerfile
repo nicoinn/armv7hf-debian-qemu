@@ -21,7 +21,7 @@ RUN cd /resin-xbuild/ && go build -ldflags "-w -s" resin-xbuild.go
 
 
 
-FROM resin/rpi-raspbian:latest
+FROM arm32v6/alpine
 
 COPY --from=BUILDENV /qemu/arm-linux-user/qemu-arm /usr/bin/qemu-arm-static
 COPY --from=BUILDENV /resin-xbuild/resin-xbuild /usr/bin/

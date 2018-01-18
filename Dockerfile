@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 	golang \ 
 	&& apt-get autoclean && apt-get autoremove
 
-RUN git clone git://git.qemu.org/qemu.git  
+RUN git clone https://github.com/nicoinn/qemu.git 
 
 RUN cd qemu && ./configure --target-list=arm-linux-user --static && make  
 
